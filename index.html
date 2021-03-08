@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>なでしこ</title>
+	</head>
+	<body>
+		<p>変数：<span id="var"></span></p>
+		<p>定数：<span id="const"></span></p>
+		<p>四則演算：<span id="calc"></span></p>
+		<p>文字列結合：<span id="str"></span></p>
+
+		<!-- なでしこのプログラム -->
+		<script type="なでしこ">
+			# 変数
+			名前 = 「なまけもの」
+			「#var」のDOM要素取得して「{名前}」をテキスト設定
+
+			# 定数
+			定数 趣味 = 「旅行」
+			「#const」のDOM要素取得して「{趣味}」をテキスト設定
+
+			# 四則演算
+			商品名 = 「伝説のリンゴ」
+			価格 = 1000
+			数量 = 5
+			合計金額 = 価格 * 数量
+			「#calc」のDOM要素取得して「{合計金額}」をテキスト設定
+
+			# 文字列結合
+			価格 = 価格の通貨形式
+			数量 = 数量の通貨形式
+			合計金額 = 合計金額の通貨形式
+			「#str」のDOM要素取得して「{商品名}は{価格}円です。{数量}個で小計{合計金額}円です。」をテキスト設定
+		</script>
+		<!-- なでしこの実行エンジンを取り込む -->
+		<script type="text/javascript"
+		 src="https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js&run"
+		></script>
+	</body>
+</html>
